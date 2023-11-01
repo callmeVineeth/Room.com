@@ -1,0 +1,454 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 500 600 700;
+    line-height: 20px;
+}
+
+.mainNavbar{
+    background-color: rgb(146, 139, 139);
+    box-sizing: border-box;
+    position: relative;
+    color: dark;
+    font-size: 4vw;
+    font-weight: bolder;
+    text-align: center;
+    display: none;
+    z-index: 11;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(-100px);
+    transition: 0.3s ;
+}
+.mainNavbar img{
+  float: left;
+  position: fixed;
+}
+.mainNavbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.mainNavbar li:hover{
+    color: blue;
+}
+
+.arrowBtn2{
+    padding-bottom: 15px;
+    transition: transform 2s;
+    transform: translateX(0); 
+}
+
+
+.Section-one{
+height: 58vh;
+width: 100%;    
+display: flex;
+flex-direction: column;
+}
+
+#hamberger,#closeBtn{
+    display: none;
+    z-index: 999;
+    margin-top: 20px;
+    transform: translateY(100px);
+}
+
+.navbar{
+    position: fixed;
+    top: 40px;
+    z-index: 10;
+    display: inline-block;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline;
+    margin: 2vw;
+    font-size: 16px;
+}
+.navbar a:hover{
+    color: blue;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.mobile-Navbar{
+    display: none;
+}
+
+#room{
+    font-size: 2vw;
+}
+
+.first-row{
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#image-one{
+    z-index: 4;
+    height: 60vh;
+    width: 65%;
+    position: absolute; 
+    transition: transform 3s;
+    transform: translateX(0); 
+}
+
+
+#image-two{
+    z-index: 2;
+    height: 60vh;
+    width: 65%;
+    position: absolute;
+    transition: 0.5s;
+    transform: translateX(0)
+
+}
+
+#image-three{
+    z-index: 3;
+    height: 60vh;
+    width: 65%;
+    position: absolute;
+    transform: translateX(-900px);
+    transition: 2s;
+
+}
+
+.firstSection-content{
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 30px;
+    
+}
+
+#firstTitle{
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
+#firstDesc{
+font-size: 15px;
+}
+
+#shopingTab{
+    display: flex;
+    width: 400px;
+    cursor: pointer;
+}
+#shopingTab:hover{
+    #arrowIcon{
+        width: 100px;
+    }
+}
+#shopNow{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#arrowIcon{
+    cursor: pointer;
+    width: 40px;
+    transition: 0.5s;
+}
+
+/*animation effect for shop now*/
+
+@keyframes fade-inout{
+    0%{opacity: 1}
+    100%{opacity: 0.2}
+}
+#shopNow{
+    animation: fade-inout 1s infinite alternate;
+}
+
+
+
+.arrowBtn2{
+    position: relative;
+    z-index: 10;
+    background-color: rgb(8, 7, 7);
+    height: 40px;
+    width: 80px;
+    margin-top: 352px;
+    margin-left: 780px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+
+}
+
+.secondSection{
+height: 40vh;
+width: 100%;    
+display: flex;
+flex-direction: row;
+}
+
+.secondSection img{
+    width: 30%;
+}
+
+.secondSection-content{
+    width: fit-content;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+}
+#aboutTitle{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+
+@media (max-width: 1050px) {
+    .firstSection-content{
+        margin-left: -150px;
+    }
+.arrowBtn2{
+    margin-top: 390px;
+}
+.secondSection{
+    margin-top: 10px;
+}
+
+
+}
+
+/* for Tab View */
+@media (max-width: 900px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        overflow-x:hidden;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .first-row{
+
+        flex-direction: column;
+        align-content:center ;
+        justify-content: center;
+        width: 70%;
+        height: 90vh;
+        margin-left: 100px;
+         
+    }
+
+.navbar{
+    z-index: 99;
+    margin-left: 60px;
+}
+
+#room{
+    font-size: 30px;
+}
+
+.navbar li{
+    font-size: 20px;
+}
+
+    #image-one{
+    width: 90%;
+    height: 500px;
+    }
+    #image-two{
+    width: 90%;
+    height: 500px;
+    }
+    #image-three{
+    width: 90%;
+    height: 500px;
+    }
+
+.arrowBtn2{
+    height: 50px;
+    margin-left: 600px;
+    margin-top: 450px;
+    position: relative;
+
+}
+
+    .firstSection-content{
+        width: 100%;
+        margin-top: 100px;
+        margin-left: 70px;
+    }
+
+
+    .secondSection{
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+        margin-top: 400px;
+        margin-left: 70px;
+    }
+
+    #darkChair{
+        width: 105%;
+        height: 35vh;
+        margin-left: 2px;
+    }
+
+
+    .secondSection-content{
+        width: 80%;
+        height: 35vh;
+        margin-left: 2px;
+    }
+
+#lightChair{
+    width: 105%;
+    height: 35vh;
+    margin-left: 2px;
+}
+
+}
+
+
+
+@media (max-width: 500px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        position: absolute;
+        overflow: hidden;
+    }
+
+
+    .mainNavbar{
+        display: block;
+    }
+
+    .navbar ul{
+        display: none;
+    }
+ 
+    #hamberger{
+        display: block;
+        cursor: pointer;
+        height: 20px;
+    }
+
+    .navbar li{
+        font-size: 20px;
+    }
+
+    .first-row{
+        margin-top: -20px;
+        flex-direction: column;
+        align-content:center ;
+        justify-content: center;
+        width: 35%;
+        height: 100vh;
+        margin-left: -10px;
+            
+    }
+
+        #shopingTab{
+            width: 200px;
+        }
+    
+    .arrowBtn2{
+    margin-left: 0px;
+    height: 35px;
+   
+    }
+
+    #firstTitle{
+        font-size: 18px;
+        
+    }
+
+.firstSection-content{
+    width: 300px;
+    margin-left: 390px;
+}
+
+        .secondSection{
+            width: 80%;
+            height: 150vh;
+            flex-direction: column;
+            margin-top: 700px;
+            margin-left: 10px;
+        }
+    
+        #darkChair{
+            width: 115%;
+            height: 55vh;
+            margin-left: 2px;
+        }
+    
+    
+        .secondSection-content{
+            width: 95%;
+            height: 60vh;
+            margin-left: 2px;
+            padding: 40px;
+        }
+    
+    #lightChair{
+        width: 115%;
+        height: 40vh;
+        margin-left: 2px;
+    }
+
+}
+
+
+@media (max-width: 414px) {
+
+    .Section-one{
+        margin-top: 100px;
+    }
+    .first-row{
+        width: 120px;
+    }
+
+    .firstSection-content{
+        width: 250px;
+        margin-left: 150px;
+    }
+    .mobile-Navbar{
+        top: 5px;
+    }
+
+}
+@media (max-width: 380px) {
+
+    #img-one{
+   margin-right: 20px;
+    }
+    
+
+    .mobile-Navbar ul li{
+        height: 12vh;
+        font-size: 25px;;
+        margin-left: 25px;
+    }
+
+}
