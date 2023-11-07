@@ -11,8 +11,9 @@ Users should be able to:
 
 ### Screenshot
 
-![]('./design/mobile-navigation.jpg')
-('./design/desktop-design-slide-3.jpg')
+![](./design/mobile-navigation.jpg)
+![](./design/desktop-design-slide-3.jpg)
+
 
 
 ### Links
