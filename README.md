@@ -1,7 +1,7 @@
 
 ## Overview
 
-This is a website made with html,css & javascript this is not fully completed.
+This is a website made with html,css & javascript.
 
 Users should be able to:
 
