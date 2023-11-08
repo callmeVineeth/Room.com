@@ -1,7 +1,7 @@
 
 ## Overview
 
-This is just a sample  website made for some educational purpose, this is not fully completed.
+This is a website made with html,css & javascript this is not fully completed.
 
 Users should be able to:
 
